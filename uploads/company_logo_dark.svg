@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <linearGradient id="primaryGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="accentGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="240" rx="16" fill="#0f172a"/>
+
+  <!-- Logo Mark -->
+  <g transform="translate(30, 25)">
+    <path d="M95 10 L165 42 C165 110, 135 155, 95 180 C55 155, 25 110, 25 42 Z" fill="#1e293b" />
+    <path d="M95 24 L152 50 C152 104, 128 142, 95 164 C62 142, 38 104, 38 50 Z" fill="url(#primaryGradDark)" />
+    
+    <path d="M95 44 L132 80 L118 80 L95 58 L72 80 L58 80 Z" fill="#ffffff" opacity="0.95"/>
+    <path d="M95 68 L126 102 L112 102 L95 84 L78 102 L64 102 Z" fill="#bae6fd" />
+    <path d="M95 92 L120 124 L108 124 L95 108 L82 124 L70 124 Z" fill="url(#accentGradDark)" />
+
+    <circle cx="95" cy="140" r="6" fill="#ffffff" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(240, 50)">
+    <text x="0" y="44" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" letter-spacing="1.5" fill="#f8fafc">
+      AL MATHABIRIH
+    </text>
+    <text x="350" y="44" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="24" letter-spacing="2" fill="#60a5fa">
+      HR CO.
+    </text>
+    <text x="0" y="84" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="22" letter-spacing="3" fill="#93c5fd">
+      EQUIPWORKFORCE GLOBAL
+    </text>
+    <text x="0" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="13" letter-spacing="1.2" fill="#94a3b8">
+      INTERNATIONAL MANPOWER SUPPLY &amp; TECHNICAL RECRUITMENT · ISO 9001
+    </text>
+    <line x1="0" y1="134" x2="520" y2="134" stroke="#334155" stroke-width="2" />
+  </g>
+</svg>

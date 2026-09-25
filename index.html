@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _origFetch;
+            },
+            set: function(val) {
+              _origFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              var desc = Object.getOwnPropertyDescriptor(Window.prototype, 'fetch');
+              if (desc && !desc.set && desc.configurable) {
+                Object.defineProperty(Window.prototype, 'fetch', {
+                  get: function() {
+                    return _origFetch;
+                  },
+                  set: function(val) {
+                    _origFetch = val;
+                  },
+                  configurable: true,
+                  enumerable: true
+                });
+              }
+            } catch (e) {}
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>EquipWorkforce – International Manpower & Workforce Solutions</title>
+    <meta name="description" content="Enterprise manpower supply, staffing solutions, and recruitment management platform for global industries including construction, engineering, logistics, hospitality, and facility management." />
+    <meta property="og:title" content="EquipWorkforce – International Manpower & Workforce Solutions" />
+    <meta property="og:description" content="Enterprise manpower supply, staffing solutions, and recruitment management platform for global industries including construction, engineering, logistics, hospitality, and facility management." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EquipWorkforce" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EquipWorkforce – International Manpower & Workforce Solutions" />
+    <meta name="twitter:description" content="Enterprise manpower supply, staffing solutions, and recruitment management platform for global industries." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EquipWorkforce",
+      "url": "https://equipworkforce.com",
+      "logo": "/logo.svg",
+      "description": "Global workforce solutions, manpower recruitment, and staffing supply company serving construction, oil & gas, facility management, and logistics.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+44-20-7946-0920",
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "Arabic"]
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Bo36Jasq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ms5J_UtR.css">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
+
